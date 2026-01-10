@@ -54,8 +54,8 @@ add_executable(${PROJECT_NAME} ${SRC_FILES})
 
 # Include directories
 target_include_directories(${PROJECT_NAME} PRIVATE
-    "${CMAKE_SOURCE_DIR}/include"
     "${CMAKE_SOURCE_DIR}/res"
+    "${CMAKE_SOURCE_DIR}/include"
 )
 
 # Link libraries

@@ -6,7 +6,7 @@
 #  \_____|_|  |_|\__,_|_|\_\___| |_.__/ \__,_|_|_|\__,_|
 
 cmake_minimum_required(VERSION 3.30)
-project(ExampleProject)
+project(ExampleProject VERSION 1.0.0)
 
 #   _____              _____ _                  _               _ 
 #  / ____|_     _     / ____| |                | |             | |
@@ -56,6 +56,7 @@ add_executable(${PROJECT_NAME} ${SRC_FILES})
 target_include_directories(${PROJECT_NAME} PRIVATE
     "${CMAKE_SOURCE_DIR}/res"
     "${CMAKE_SOURCE_DIR}/include"
+    "${CMAKE_SOURCE_DIR}/lib"
 )
 
 # Link libraries
